@@ -651,6 +651,9 @@ template {
 /* line 11, F:/Github/treehouse-frontend-project04/scss/components/_images.scss */
 .img--avatar {
   height: 200px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 3, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
@@ -664,6 +667,7 @@ template {
   color: white;
   transition: font-size 0.75s ease, font-weight 0.4s ease;
   cursor: pointer;
+  align-self: center;
   margin-bottom: 35px;
 }
 
@@ -674,12 +678,7 @@ template {
   }
 }
 
-/* line 18, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
-.btn--default:hover {
-  color: #e6e6e6;
-}
-
-/* line 21, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
+/* line 19, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
 .btn--default:active {
   font-size: 125%;
 }
@@ -695,6 +694,7 @@ template {
   color: white;
   transition: font-size 0.75s ease, font-weight 0.4s ease;
   cursor: pointer;
+  align-self: center;
   margin-bottom: 35px;
 }
 
@@ -705,12 +705,7 @@ template {
   }
 }
 
-/* line 18, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
-.btn--success:hover {
-  color: #e6e6e6;
-}
-
-/* line 21, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
+/* line 19, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
 .btn--success:active {
   font-size: 125%;
 }
@@ -726,6 +721,7 @@ template {
   color: white;
   transition: font-size 0.75s ease, font-weight 0.4s ease;
   cursor: pointer;
+  align-self: center;
   margin-bottom: 35px;
 }
 
@@ -736,12 +732,7 @@ template {
   }
 }
 
-/* line 18, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
-.btn--error:hover {
-  color: #e6e6e6;
-}
-
-/* line 21, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
+/* line 19, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
 .btn--error:active {
   font-size: 125%;
 }
@@ -757,6 +748,7 @@ template {
   color: white;
   transition: font-size 0.75s ease, font-weight 0.4s ease;
   cursor: pointer;
+  align-self: center;
   margin-bottom: 35px;
 }
 
@@ -767,12 +759,7 @@ template {
   }
 }
 
-/* line 18, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
-.btn--warning:hover {
-  color: #e6e6e6;
-}
-
-/* line 21, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
+/* line 19, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
 .btn--warning:active {
   font-size: 125%;
 }
@@ -788,6 +775,7 @@ template {
   color: white;
   transition: font-size 0.75s ease, font-weight 0.4s ease;
   cursor: pointer;
+  align-self: center;
   margin-bottom: 35px;
 }
 
@@ -798,39 +786,96 @@ template {
   }
 }
 
-/* line 18, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
-.btn--info:hover {
-  color: #e6e6e6;
-}
-
-/* line 21, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
+/* line 19, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
 .btn--info:active {
   font-size: 125%;
 }
 
-/* line 30, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
+/* line 28, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
 .theme__colors[class*='btn--default'] {
   background-color: #51ddfc;
 }
 
 /* line 30, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
+.theme__colors[class*='btn--default']:hover {
+  background-color: #04bbe3;
+}
+
+/* line 28, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
 .theme__colors[class*='btn--success'] {
   background-color: #63cc82;
 }
 
 /* line 30, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
+.theme__colors[class*='btn--success']:hover {
+  background-color: #329750;
+}
+
+/* line 28, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
 .theme__colors[class*='btn--error'] {
   background-color: #e4757a;
 }
 
 /* line 30, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
+.theme__colors[class*='btn--error']:hover {
+  background-color: #cb282f;
+}
+
+/* line 28, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
 .theme__colors[class*='btn--warning'] {
   background-color: #fd7856;
 }
 
 /* line 30, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
+.theme__colors[class*='btn--warning']:hover {
+  background-color: #ea3203;
+}
+
+/* line 28, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
 .theme__colors[class*='btn--info'] {
   background-color: #927cc1;
+}
+
+/* line 30, F:/Github/treehouse-frontend-project04/scss/components/_buttons.scss */
+.theme__colors[class*='btn--info']:hover {
+  background-color: #5e4592;
+}
+
+/* line 1, F:/Github/treehouse-frontend-project04/scss/components/_forms.scss */
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* line 4, F:/Github/treehouse-frontend-project04/scss/components/_forms.scss */
+.form__label--hidden {
+  visibility: hidden;
+}
+
+/* line 7, F:/Github/treehouse-frontend-project04/scss/components/_forms.scss */
+.form__input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #58e1c1;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* line 15, F:/Github/treehouse-frontend-project04/scss/components/_forms.scss */
+.form__input::placeholder {
+  display: inline-block;
+  color: #838383;
+  font-weight: 550;
+}
+
+/* line 20, F:/Github/treehouse-frontend-project04/scss/components/_forms.scss */
+.form__input:focus {
+  outline: none;
+  border-bottom: 3px solid #20b391;
 }
 
 /*# sourceMappingURL=../css/styles.map */

@@ -11,5 +11,7 @@
   &--avatar {
     @extend %img;
     height: $img-height;
+    width: $img-height;
+    @include centered;
   }
 }

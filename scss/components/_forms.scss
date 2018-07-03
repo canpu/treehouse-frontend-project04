@@ -1,0 +1,25 @@
+.form{
+  width: 100%;
+  @include flexy($disp: flex, $dir: column, $just: space-around);
+  &__label--hidden {
+    visibility: hidden;
+  }
+  &__input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid $color-highlight;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    &::placeholder {
+      display: inline-block;
+      color: darken($color-txt, 5%);
+      font-weight: $font-bd-lg;
+    }
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid darken($color-highlight, 20%);
+    }
+  }
+}
