@@ -1,10 +1,10 @@
 // Links
 %link {
-    display: inline-block;
     text-decoration: none;
     color: map-get($color-btn, 'default');
     font-weight: $font-bd-lg;
     text-align: center;
+    cursor: pointer;
 }
 
 

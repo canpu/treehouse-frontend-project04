@@ -11,11 +11,11 @@
 /* BEM */
 /* line 2, F:/Github/treehouse-frontend-project04/scss/utilities/_placeholders.scss */
 .link {
-  display: inline-block;
   text-decoration: none;
   color: #51ddfc;
   font-weight: 550;
   text-align: center;
+  cursor: pointer;
 }
 
 /* line 12, F:/Github/treehouse-frontend-project04/scss/utilities/_placeholders.scss */
@@ -465,9 +465,10 @@ p {
   }
 }
 
-/* line 12, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 36, F:/Github/treehouse-frontend-project04/scss/utilities/_mixins.scss */
 .grid__row {
   align-items: stretch;
+  margin-bottom: 45px;
 }
 
 /* line 36, F:/Github/treehouse-frontend-project04/scss/utilities/_mixins.scss */
@@ -483,7 +484,7 @@ p {
   }
 }
 
-/* line 24, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .grid__col--1 > *:only-child {
   align-items: center;
   justify-content: center;
@@ -503,7 +504,7 @@ p {
   }
 }
 
-/* line 24, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .grid__col--2 > *:only-child {
   align-items: center;
   justify-content: center;
@@ -523,7 +524,7 @@ p {
   }
 }
 
-/* line 24, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .grid__col--3 > *:only-child {
   align-items: center;
   justify-content: center;
@@ -543,7 +544,7 @@ p {
   }
 }
 
-/* line 24, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .grid__col--4 > *:only-child {
   align-items: center;
   justify-content: center;
@@ -563,7 +564,7 @@ p {
   }
 }
 
-/* line 24, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .grid__col--5 > *:only-child {
   align-items: center;
   justify-content: center;
@@ -583,7 +584,7 @@ p {
   }
 }
 
-/* line 24, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .grid__col--6 > *:only-child {
   align-items: center;
   justify-content: center;
@@ -603,7 +604,7 @@ p {
   }
 }
 
-/* line 24, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .grid__col--7 > *:only-child {
   align-items: center;
   justify-content: center;
@@ -623,7 +624,7 @@ p {
   }
 }
 
-/* line 24, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .grid__col--8 > *:only-child {
   align-items: center;
   justify-content: center;
@@ -643,7 +644,7 @@ p {
   }
 }
 
-/* line 24, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .grid__col--9 > *:only-child {
   align-items: center;
   justify-content: center;
@@ -663,7 +664,7 @@ p {
   }
 }
 
-/* line 24, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .grid__col--10 > *:only-child {
   align-items: center;
   justify-content: center;
@@ -683,7 +684,7 @@ p {
   }
 }
 
-/* line 24, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .grid__col--11 > *:only-child {
   align-items: center;
   justify-content: center;
@@ -703,78 +704,78 @@ p {
   }
 }
 
-/* line 24, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .grid__col--12 > *:only-child {
   align-items: center;
   justify-content: center;
   width: 100%;
 }
 
-/* line 33, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 34, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .centered {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 37, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 38, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .theme__colors {
   border-radius: 5px;
 }
 
-/* line 40, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 41, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .theme__colors[class*='grid__col--3'] {
   background-color: #deb2ee;
   height: 45px;
   font-weight: 550;
-  margin-bottom: 45px;
+  margin-bottom: 5px;
 }
 
-/* line 40, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 41, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .theme__colors[class*='grid__col--4'] {
   background-color: #7ee6fd;
   height: 45px;
   font-weight: 550;
-  margin-bottom: 45px;
+  margin-bottom: 5px;
 }
 
-/* line 40, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 41, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .theme__colors[class*='grid__col--5'] {
   background-color: #88d9a0;
   height: 45px;
   font-weight: 550;
-  margin-bottom: 45px;
+  margin-bottom: 5px;
 }
 
-/* line 40, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 41, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .theme__colors[class*='grid__col--6'] {
   background-color: #3fabca;
   height: 45px;
   font-weight: 550;
-  margin-bottom: 45px;
+  margin-bottom: 5px;
 }
 
-/* line 40, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 41, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .theme__colors[class*='grid__col--7'] {
   background-color: #ec9fa3;
   height: 45px;
   font-weight: 550;
-  margin-bottom: 45px;
+  margin-bottom: 5px;
 }
 
-/* line 40, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 41, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .theme__colors[class*='grid__col--8'] {
   background-color: #fd9f85;
   height: 45px;
   font-weight: 550;
-  margin-bottom: 45px;
+  margin-bottom: 5px;
 }
 
-/* line 40, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
+/* line 41, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
 .theme__colors[class*='grid__col--12'] {
   background-color: #7be8d1;
   height: 45px;
   font-weight: 550;
-  margin-bottom: 45px;
+  margin-bottom: 5px;
 }
 
 /* line 42, F:/Github/treehouse-frontend-project04/scss/utilities/_mixins.scss */
@@ -1090,21 +1091,22 @@ p {
   border-bottom: 3px solid #58e1c1;
   padding-bottom: 10px;
   padding-left: 10px;
+  width: 90%;
 }
 
-/* line 14, F:/Github/treehouse-frontend-project04/scss/components/_forms.scss */
+/* line 15, F:/Github/treehouse-frontend-project04/scss/components/_forms.scss */
 .form__input:last-of-type {
   margin-bottom: 30px;
 }
 
-/* line 17, F:/Github/treehouse-frontend-project04/scss/components/_forms.scss */
+/* line 18, F:/Github/treehouse-frontend-project04/scss/components/_forms.scss */
 .form__input::placeholder {
   display: inline-block;
   color: #838383;
   font-weight: 550;
 }
 
-/* line 22, F:/Github/treehouse-frontend-project04/scss/components/_forms.scss */
+/* line 23, F:/Github/treehouse-frontend-project04/scss/components/_forms.scss */
 .form__input:focus {
   outline: none;
   border-bottom: 3px solid #20b391;

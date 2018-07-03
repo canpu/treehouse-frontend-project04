@@ -9,9 +9,10 @@
 }
 
 .grid {
-  &__row {
+  @include element('row') {
     @extend %grid;
     align-items: stretch;
+    margin-bottom: $grid-vert-gutter;
   }
   @for $i from 1 through $grid-column-num {
     @include element('col--#{$i}') {
@@ -41,7 +42,7 @@
       background-color: $color;
       height: $grid-height;
       font-weight: $font-bd-lg;
-      margin-bottom: $grid-vert-gutter;
+      margin-bottom: 5px;
     }
   }
 
