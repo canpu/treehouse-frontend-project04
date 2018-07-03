@@ -14,8 +14,8 @@
   @include modifier('secondary') {
     @extend %headline;
     margin-left: 10px;
-    -webkit-margin-before: 40px;
-    -webkit-margin-after: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
     font-weight: $font-bd-normal;
   }
 }
@@ -41,6 +41,6 @@
   font-style: italic;
   font-weight: $font-bd-normal;
   @include mq('desktop') {
-    margin-bottom: 60px;
+    margin-bottom: $button-margin;
   }
 }

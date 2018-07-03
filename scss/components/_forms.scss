@@ -1,5 +1,7 @@
 .form{
   width: 100%;
+  align-self: flex-start;
+  height: 100%;
   @include flexy($disp: flex, $dir: column, $just: space-between);
   @include element('label--hidden') {
     visibility: hidden;

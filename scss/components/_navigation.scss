@@ -2,6 +2,12 @@
   width: 100%;
   display: inline-block;
   cursor: pointer;
+  &:first-child > * {
+    @extend %target;
+  }
+  &:nth-child(1n+2) > * {
+    @extend %nontarget;
+  }
   & > * {
     display: inline-block;
     text-align: center;
@@ -15,12 +21,6 @@
   }
   &:nth-child(1n+2) {
     margin-top: 10px;
-  }
-  &:first-child > * {
-    @extend %target;
-  }
-  &:nth-child(1n+2) > * {
-    @extend %nontarget;
   }
   @include mq('desktop') {
     width: 20%;
