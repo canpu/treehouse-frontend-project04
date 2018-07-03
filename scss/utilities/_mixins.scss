@@ -1,0 +1,49 @@
+/* Flexbox */
+@mixin flexy($disp: flex, $dir: null, $wrap: null, $just: null,
+  $align-coaxis: null, $self-coaxis: null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  align-items: $align-coaxis;
+  align-self: $self-coaxis;
+}
+
+/* Media Query */
+@mixin mq($screen-type) {
+  $screen-size: map-get($breakpoints, $screen-type);
+  $mobile-size: map-get($breakpoints, 'mobile');
+  @if $screen-size == $mobile-size {
+    @media(max-width: $mobile-size) {
+      @content;
+    }
+  }
+  @else {
+    @media(min-width: $screen-size) {
+      @content;
+    }
+  }
+}
+
+/* Border */
+@mixin border($radius: null, $color: null, $bd-style: null) {
+  border-radius: $radius;
+  border-color: $color;
+  border: $bd-style;
+}
+
+/* Size */
+@mixin size($width: null, $height: null) {
+  width: $width;
+  height: $height;
+}
+
+/* Centered */
+@mixin centered() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Size */
+
+// element and modifier BEM selectors

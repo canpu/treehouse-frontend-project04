@@ -1,0 +1,43 @@
+.container {
+  width: 90%;
+  margin-bottom: $page-margin-bottom;
+  @include centered();
+  @include flexy($disp: flex, $dir: column);
+  @include mq('desktop') {
+    width: 75%;
+  }
+}
+
+.grid {
+  &__row {
+    @extend %grid;
+    margin-top: $grid-vert-gutter;
+  }
+  @for $i from 1 through $grid-column-num {
+    &__col--#{$i} {
+      @extend %grid;
+      @include size($width: get-col-width($grid-column-num));
+      color: $color-txt-grid;
+      @include mq('desktop') {
+        width: get-col-width($i);
+      }
+    }
+  }
+}
+
+.centered {
+  @include centered();
+}
+
+.theme__colors {
+  @include border($radius: 5px);
+  @each $i, $color in $color-grid {
+    &[class*='grid__col--#{$i}'] {
+      background-color: $color;
+      height: $grid-height;
+      font-weight: $font-bd-lg;
+      margin-bottom: 5px;
+    }
+  }
+
+}
