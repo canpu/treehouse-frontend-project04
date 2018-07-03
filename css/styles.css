@@ -485,7 +485,7 @@ p {
 }
 
 /* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
-.grid__col--1 > *:only-child {
+.grid__col--1 > nav {
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -505,7 +505,7 @@ p {
 }
 
 /* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
-.grid__col--2 > *:only-child {
+.grid__col--2 > nav {
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -525,7 +525,7 @@ p {
 }
 
 /* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
-.grid__col--3 > *:only-child {
+.grid__col--3 > nav {
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -545,7 +545,7 @@ p {
 }
 
 /* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
-.grid__col--4 > *:only-child {
+.grid__col--4 > nav {
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -565,7 +565,7 @@ p {
 }
 
 /* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
-.grid__col--5 > *:only-child {
+.grid__col--5 > nav {
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -585,7 +585,7 @@ p {
 }
 
 /* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
-.grid__col--6 > *:only-child {
+.grid__col--6 > nav {
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -605,7 +605,7 @@ p {
 }
 
 /* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
-.grid__col--7 > *:only-child {
+.grid__col--7 > nav {
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -625,7 +625,7 @@ p {
 }
 
 /* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
-.grid__col--8 > *:only-child {
+.grid__col--8 > nav {
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -645,7 +645,7 @@ p {
 }
 
 /* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
-.grid__col--9 > *:only-child {
+.grid__col--9 > nav {
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -665,7 +665,7 @@ p {
 }
 
 /* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
-.grid__col--10 > *:only-child {
+.grid__col--10 > nav {
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -685,7 +685,7 @@ p {
 }
 
 /* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
-.grid__col--11 > *:only-child {
+.grid__col--11 > nav {
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -705,7 +705,7 @@ p {
 }
 
 /* line 25, F:/Github/treehouse-frontend-project04/scss/components/_grid.scss */
-.grid__col--12 > *:only-child {
+.grid__col--12 > nav {
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -840,7 +840,7 @@ p {
 }
 
 /* line 11, F:/Github/treehouse-frontend-project04/scss/components/_navigation.scss */
-.nav__item > * {
+.nav__item > a {
   display: inline-block;
   text-align: center;
   width: 100%;

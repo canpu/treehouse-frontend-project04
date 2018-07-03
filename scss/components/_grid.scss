@@ -22,7 +22,7 @@
       @include mq('desktop') {
         width: get-col-width($i);
       }
-      & > *:only-child {
+      & > nav {
         align-items: center;
         justify-content: center;
         width: 100%;
