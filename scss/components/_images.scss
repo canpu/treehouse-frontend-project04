@@ -1,17 +1,19 @@
 .img {
-  &--logo {
+  @include modifier('logo') {
     @extend %img;
   }
-  &--frame {
+  @include modifier('frame') {
     @extend %img;
     padding: $img-frame-gutter;
     border: 0.5px solid $img-frame-color;
     height: $img-height;
+    max-width: 406px;
   }
-  &--avatar {
+  @include modifier('avatar') {
     @extend %img;
     height: $img-height;
     width: $img-height;
     @include centered;
+    max-width: 210px;
   }
 }

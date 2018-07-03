@@ -1,14 +1,34 @@
 // Links
-
+%link {
+    display: inline-block;
+    text-decoration: none;
+    color: map-get($color-btn, 'default');
+    font-weight: $font-bd-lg;
+    text-align: center;
+}
 
 
 // Headlines
+%headline {
+  margin-right: auto;
+  color: $color-txt;
+}
+
 // Nav items
+%target {
+  color: white;
+  background-color: $color-highlight;
+}
+
+%nontarget {
+  color: $color-txt;
+  background-color: transparent;
+}
 
 // Grid
 %grid {
   @include flexy($disp: flex, $just: space-around, $align-coaxis: center, $wrap: wrap);
-  @include size($width: 100%);
+  width: 100%;
 }
 
 // Images

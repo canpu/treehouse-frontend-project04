@@ -1,25 +1,30 @@
 .container {
-  width: 90%;
+  width: $page-width-mobile;
   margin-bottom: $page-margin-bottom;
   @include centered();
   @include flexy($disp: flex, $dir: column);
   @include mq('desktop') {
-    width: 75%;
+    width: $page-width-desktop;
   }
 }
 
 .grid {
   &__row {
     @extend %grid;
-    margin-top: $grid-vert-gutter;
+    align-items: stretch;
   }
   @for $i from 1 through $grid-column-num {
-    &__col--#{$i} {
+    @include element('col--#{$i}') {
       @extend %grid;
-      @include size($width: get-col-width($grid-column-num));
+      width: get-col-width($grid-column-num);
       color: $color-txt-grid;
       @include mq('desktop') {
         width: get-col-width($i);
+      }
+      & > *:only-child {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
       }
     }
   }
@@ -30,13 +35,13 @@
 }
 
 .theme__colors {
-  @include border($radius: 5px);
+  border-radius: 5px;
   @each $i, $color in $color-grid {
     &[class*='grid__col--#{$i}'] {
       background-color: $color;
       height: $grid-height;
       font-weight: $font-bd-lg;
-      margin-bottom: 5px;
+      margin-bottom: $grid-vert-gutter;
     }
   }
 

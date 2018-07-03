@@ -1,17 +1,19 @@
 .form{
   width: 100%;
-  @include flexy($disp: flex, $dir: column, $just: space-around);
-  &__label--hidden {
+  @include flexy($disp: flex, $dir: column, $just: space-between);
+  @include element('label--hidden') {
     visibility: hidden;
   }
-  &__input {
+  @include element('input') {
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: 3px solid $color-highlight;
-    margin-bottom: 30px;
     padding-bottom: 10px;
     padding-left: 10px;
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
     &::placeholder {
       display: inline-block;
       color: darken($color-txt, 5%);

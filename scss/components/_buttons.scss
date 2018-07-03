@@ -1,6 +1,6 @@
 .btn {
   @each $btn, $color in $color-btn {
-    &--#{$btn} {
+    @include modifier('#{$btn}') {
       width: 100%;
       height: $button-height;
       box-shadow: none;

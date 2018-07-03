@@ -1,6 +1,6 @@
 /* Grid */
 $page-width-mobile: 90%;
-$page-width-desktop: 75%;
+$page-width-desktop: 65%;
 $page-margin-bottom: 75px;
 $grid-column-num: 12;
 $grid-gutter: 10px;
@@ -47,9 +47,13 @@ $font-family: sans-serif, Verdana;
 $font-bd-normal: 400;
 $font-bd-lg: 550;
 $font-bd-xl: 700;
+$font-size: 15px;
+$font-size-lg: 22px;
+$line-height: 27px;
+$line-height-sm: 25px;
 
 /* Images */
 $img-margin: 15px;
 $img-frame-color: lightgrey;
 $img-frame-gutter: 15px;
-$img-height: 200px;
+$img-height: 180px;

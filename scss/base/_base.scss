@@ -3,5 +3,19 @@
   font-family: $font-family;
 }
 
-// ul elements
-// p elements
+ul {
+  @include flexy($disp: flex, $dir: row, $wrap: wrap, $just: wrap);
+  @include centered;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  @include mq('desktop') {
+    width: 80%;
+  }
+}
+
+p {
+  font-size: $font-size;
+  line-height: 25px;
+}
