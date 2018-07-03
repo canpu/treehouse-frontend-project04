@@ -4,7 +4,7 @@
 }
 
 ul {
-  @include flexy($disp: flex, $dir: row, $wrap: wrap, $just: wrap);
+  @include flexy($disp: flex, $dir: row, $wrap: wrap, $just: space-around);
   @include centered;
   align-items: center;
   padding-left: 0;
@@ -18,4 +18,5 @@ ul {
 p {
   font-size: $font-size;
   line-height: 25px;
+
 }

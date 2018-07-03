@@ -1,16 +1,18 @@
 /* Flexbox */
 @mixin flexy($disp: flex, $dir: null, $wrap: null, $just: null,
-  $align-coaxis: null, $self-coaxis: null) {
+  $align-coaxis: null) {
   display: $disp;
   flex-direction: $dir;
   flex-wrap: $wrap;
   justify-content: $just;
   align-items: $align-coaxis;
-  align-self: $self-coaxis;
 }
 
 /* Media Query */
 @mixin mq($screen-type) {
+  @if $screen-type != 'mobile' and $screen-type != 'desktop' {
+    @error "#{$screen-type} is not supported by media queries.";
+  }
   $screen-size: map-get($breakpoints, $screen-type);
   $mobile-size: map-get($breakpoints, 'mobile');
   @if $screen-size == $mobile-size {
@@ -43,5 +45,3 @@
     @content;
   }
 }
-
-// element and modifier BEM selectors
