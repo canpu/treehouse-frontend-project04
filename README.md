@@ -10,7 +10,7 @@ TreeHouse FrontEnd Project 4 - Web style guide
 * The webpage is an style guide page.
 * The page has adopted a mobile first responsive design.
 * The page demonstrates differences in typography, buttons, forms, images and grid.
-* The grid system section highlights the widths of different grid classes. They all collapse to an entire row when the viewport width is smaller than 480 pixels.
+* The grid system section highlights the widths of different grid classes. They all collapse to an entire row when the viewport width is smaller than 1400 pixels.
 
 ## Techniques Involed
 
