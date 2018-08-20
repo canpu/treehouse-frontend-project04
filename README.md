@@ -3,20 +3,17 @@ TreeHouse FrontEnd Project 4 - Web style guide
 
 [Click here](https://canpu.github.io/treehouse-frontend-project04/) to view the demo
 
-![](images/project-05.gif)
+![](images/project-04.gif)
 
 ## Brief Introduction
 
-* The webpage is an iteractive photo gallery with mobile first responsive design.
-* There are 12 photos embeded on the wall
-* Hovering overing a photo, its name would appear.
-* Clicking any photo would lead you to a lightbox, in which a magnified version is shown for the corresponding photo.
-* One can navigate through all photos in the lightbox via the previous and next button (or via the keyboard).
+* The webpage is an style guide page.
+* The page has adopted a mobile first responsive design.
+* The page demonstrates differences in typography, buttons, forms, images and grid.
+* The grid system section highlights the widths of different grid classes. They all collapse to an entire row when the viewport width is smaller than 480 pixels.
 
 ## Techniques Involed
 
 * HTML
 * CSS
 * Sass
-* JavaScript
-* jQuery
